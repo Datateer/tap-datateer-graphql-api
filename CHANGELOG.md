@@ -2,6 +2,13 @@
 
 
 
+## v0.4.0 (2023-09-29)
+
+### Feature
+
+* feat: rename ([`630a6f9`](https://github.com/Datateer/tap-datateer-graphql-api/commit/630a6f9029ade4ff714ad41b1dab287666a02d6d))
+
+
 ## v0.3.0 (2023-09-29)
 
 ### Feature

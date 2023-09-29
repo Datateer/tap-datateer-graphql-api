@@ -56,3 +56,11 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 # CLI declaration
 tap-datateer-graphql-api = 'tap_datateer_graphql_api.tap:TapDatateerGraphqlApi.cli'
+
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:tool.poetry.version",]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"

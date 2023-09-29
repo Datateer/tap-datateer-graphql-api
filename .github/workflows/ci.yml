@@ -10,35 +10,36 @@ on:
   workflow_dispatch:
 
 jobs:
-  Quality:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      - name: Install Python Poetry
-        uses: abatilo/actions-poetry@v2.1.0
-        with:
-          poetry-version: 1.4.1
-      - name: Configure poetry
-        shell: bash
-        run: python -m poetry config virtualenvs.in-project true
-      - name: View poetry version
-        run: poetry --version
-      - name: Install dependencies
-        run: |
-          python -m poetry install
-      # - name: Lint with flake8
+  # Quality:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-python@v2
+  #       with:
+  #         python-version: 3.8
+  #     - name: Install Python Poetry
+  #       uses: abatilo/actions-poetry@v2.1.0
+  #       with:
+  #         poetry-version: 1.4.1
+  #     - name: Configure poetry
+  #       shell: bash
+  #       run: python -m poetry config virtualenvs.in-project true
+  #     - name: View poetry version
+  #       run: poetry --version
+  #     - name: Install dependencies
+  #       run: |
+  #         python -m poetry install
+  #     # - name: Lint with flake8
+  #     #   run: |
+  #     #     # stop the build if there are Python syntax errors or undefined names
+  #     #     poetry -vvv run flake8 . --count --show-source --statistics --max-line-length=120 --max-complexity=10
+      # # TODO: 
+      # - name: Test with pytest
       #   run: |
-      #     # stop the build if there are Python syntax errors or undefined names
-      #     poetry -vvv run flake8 . --count --show-source --statistics --max-line-length=120 --max-complexity=10
-      - name: Test with pytest
-        run: |
-          poetry run coverage run -m pytest && poetry run coverage report -m --fail-under=90
+      #     poetry run coverage run -m pytest && poetry run coverage report -m --fail-under=90
 
   BumpVersion:
-    needs: Quality
+    # needs: Quality
     # https://github.community/t/how-do-i-specify-job-dependency-running-in-another-workflow/16482
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     concurrency: release

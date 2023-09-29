@@ -2,6 +2,13 @@
 
 
 
+## v0.2.0 (2023-09-29)
+
+### Feature
+
+* feat: publish settings ([`2cc5564`](https://github.com/Datateer/tap-datateer-graphql-api/commit/2cc55641fb5c6880fb1a93478544f28a36cd4deb))
+
+
 ## v0.1.0 (2023-09-29)
 
 ### Feature

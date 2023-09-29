@@ -2,6 +2,17 @@
 
 
 
+## v0.3.0 (2023-09-29)
+
+### Feature
+
+* feat: bump version ([`b4bf1b0`](https://github.com/Datateer/tap-datateer-graphql-api/commit/b4bf1b06d7d6ffacac6d202a299d07bd87a39a9c))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of github.com:Datateer/tap-datateer-graphql-api ([`296fa0b`](https://github.com/Datateer/tap-datateer-graphql-api/commit/296fa0bea761fd81eca9de9ed66208e45b60386a))
+
+
 ## v0.2.0 (2023-09-29)
 
 ### Feature

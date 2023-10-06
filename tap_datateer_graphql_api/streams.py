@@ -102,6 +102,7 @@ class BalancesStream(DatateerGraphqlApiStream):
         yield from res
 
     def post_process(self, row: dict, context: dict) -> dict:
+        """Adds the organization id to each record"""
         row["organizationId"] = context["organization_id"]
         return row
 

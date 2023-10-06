@@ -1,5 +1,4 @@
 {
-    "auth_token": "<api token here>",
-    "api_url": "https://api.datateer.com/graphql",
-    "organization_id": "10"
+    "auth_token": "18bb7ad5-16b0-474a-b4c4-0f83856f313d",
+    "api_url": "https://api.datateer.com/graphql"
 }

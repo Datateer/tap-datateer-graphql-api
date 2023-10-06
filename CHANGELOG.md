@@ -2,6 +2,23 @@
 
 
 
+## v0.5.0 (2023-10-06)
+
+### Feature
+
+* feat: new organization stream ([`ec6bc10`](https://github.com/Datateer/tap-datateer-graphql-api/commit/ec6bc10dcf19d07479d0c816536a4703885d16e3))
+
+* feat: new organization stream ([`4dfdd5a`](https://github.com/Datateer/tap-datateer-graphql-api/commit/4dfdd5a0fbfb448a61174e86b899103ab0dd275b))
+
+* feat: new organization stream ([`af725ee`](https://github.com/Datateer/tap-datateer-graphql-api/commit/af725ee809d94280b45323491456df6faf938f54))
+
+### Unknown
+
+* Merge pull request #4 from Datateer/new-org-stream
+
+New org stream ([`57f335a`](https://github.com/Datateer/tap-datateer-graphql-api/commit/57f335a0995e214e658423d04f14644c23ae47de))
+
+
 ## v0.4.0 (2023-09-29)
 
 ### Feature

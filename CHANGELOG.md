@@ -2,6 +2,21 @@
 
 
 
+## v0.5.1 (2023-10-06)
+
+### Fix
+
+* fix: version bump ([`d7ad4a5`](https://github.com/Datateer/tap-datateer-graphql-api/commit/d7ad4a514a2662db812158921414464d07213ae9))
+
+* fix: version bump ([`d397345`](https://github.com/Datateer/tap-datateer-graphql-api/commit/d397345b702652f3fbbfb07666a7f729df674991))
+
+### Unknown
+
+* Merge pull request #5 from Datateer/org-change
+
+Org change ([`4c02c40`](https://github.com/Datateer/tap-datateer-graphql-api/commit/4c02c40eb87aa35ce960b70cec065b481d35d876))
+
+
 ## v0.5.0 (2023-10-06)
 
 ### Feature

@@ -27,19 +27,13 @@ class TapDatateerGraphqlApi(Tap):
             th.StringType,
             required=False,
             description="The URL of the API e.g. https://api.datateer.com/graphql or http://localhost:3000/graphql. Defaults to https://api.datateer.com/api",
-            default="https://api.datateer.com/graphql"
-        ),
-        th.Property(
-            "organization_id",
-            th.StringType,
-            required=True,
-            description="The Datateer organization ID identifying the client"
+            default="https://api.datateer.com/graphql",
         ),
         th.Property(
             "start_date",
             th.DateTimeType,
             description="The earliest record date to sync",
-            default="2023-01-01"
+            default="2023-01-01",
         ),
     ).to_dict()
 
@@ -49,9 +43,7 @@ class TapDatateerGraphqlApi(Tap):
         Returns:
             A list of discovered streams.
         """
-        return [
-            streams.BalancesStream(self),
-        ]
+        return [streams.BalancesStream(self), streams.OrganizationsStream(self)]
 
 
 if __name__ == "__main__":

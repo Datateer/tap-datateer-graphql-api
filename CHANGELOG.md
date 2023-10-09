@@ -2,6 +2,19 @@
 
 
 
+## v0.5.2 (2023-10-09)
+
+### Fix
+
+* fix: change property type to string ([`26e8d60`](https://github.com/Datateer/tap-datateer-graphql-api/commit/26e8d601ef96c17abffe0c67959a3a62602308b1))
+
+### Unknown
+
+* Merge pull request #6 from Datateer/change-type
+
+fix: change property type to string ([`e91e70e`](https://github.com/Datateer/tap-datateer-graphql-api/commit/e91e70e5d35aab70ae2db69bcfa6d2e1716d911a))
+
+
 ## v0.5.1 (2023-10-06)
 
 ### Fix

@@ -17,7 +17,7 @@ class OrganizationsStream(DatateerGraphqlApiStream):
     """Organizations with Balances"""
 
     name = "organizations"
-    schema = th.PropertiesList(th.Property("id", th.NumberType)).to_dict()
+    schema = th.PropertiesList(th.Property("id", th.StringType)).to_dict()
     replication_key = None
     query = """
     query {
@@ -50,7 +50,7 @@ class BalancesStream(DatateerGraphqlApiStream):
 
     name = "balances"
     schema = th.PropertiesList(
-        th.Property("organizationId", th.NumberType),
+        th.Property("organizationId", th.StringType),
         th.Property("startDate", th.DateTimeType),
         th.Property("endDate", th.DateTimeType),
         th.Property("accrualHours", th.NumberType),

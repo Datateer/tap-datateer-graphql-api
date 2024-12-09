@@ -16,12 +16,13 @@ plugins:
     - about
     - stream-maps
     config:
-      start_date: '2010-01-01T00:00:00Z'
+      start_date: '2010-01-01'
+      auth_token: $TAP_DATATEER_GRAPHQL_API_AUTH_TOKEN
     settings:
     - name: auth_token
       kind: password
     - name: start_date
-      value: '2010-01-01T00:00:00Z'
+      value: '2010-01-01'
   loaders:
   - name: target-jsonl
     variant: andyh1203

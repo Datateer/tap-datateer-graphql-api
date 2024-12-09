@@ -75,7 +75,6 @@ class BalancesStream(DatateerGraphqlApiStream):
             excessHours
             expiredHours
             priorPeriodRolloverHours
-            projectedCharges
             rolloverHours
             }
         }
@@ -105,6 +104,11 @@ class BalancesStream(DatateerGraphqlApiStream):
         """Adds the organization id to each record"""
         row["organizationId"] = context["organization_id"]
         return row
+    
+    def prepare_request_payload(self, context: dict | None, next_page_token) -> dict | None:
+
+        retval = super().prepare_request_payload(context, next_page_token)
+        return retval
 
     parent_stream_type = OrganizationsStream
     ignore_parent_replication_key = True
